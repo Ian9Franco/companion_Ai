@@ -1,0 +1,36 @@
+{
+  "name": "companion-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CLIs compactas y un MCP local minimo para agentes de marketing, desarrollo y gestion.",
+  "type": "module",
+  "bin": {
+    "companion": "./dist/cli/main.js"
+  },
+  "scripts": {
+    "companion": "tsx src/cli/main.ts",
+    "mcp": "tsx src/mcp/server.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "commander": "^15.1.0",
+    "dotenv": "^18.0.10",
+    "pino": "^10.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.10",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
