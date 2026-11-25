@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "meta-ads": {
+      "url": "https://mcp.facebook.com/ads"
+    },
+    "companion": {
+      "command": "node",
+      "args": ["--import", "tsx", "src/mcp/server.ts"]
+    }
+  }
+}
